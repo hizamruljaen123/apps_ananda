@@ -1,0 +1,80 @@
+Penyakit;Gejala;Nilai_Importance
+Penyakit Celiac;Kehilangan berat badan;0.9
+Penyakit Celiac;Kelemahan;0.7
+Penyakit Celiac;Kelelahan;0.7
+Penyakit Celiac;Ruam kulit (terutama pada siku dan lutut);0.8
+Hepatitis;Kelelahan;0.9
+Hepatitis;Nyeri pada area hati (perut bagian kanan atas);0.8
+Hepatitis;Kuning pada kulit dan mata (jaundice);0.9
+Hepatitis;Mual dan muntah;0.7
+Hepatitis;Penurunan nafsu makan;0.8
+Pankreatitis;Nyeri perut yang hebat dan konstan di atas pusar;0.9
+Pankreatitis;Mual dan muntah;0.8
+Pankreatitis;Demam;0.7
+Pankreatitis;Kehilangan nafsu makan;0.8
+Kolitis Ulserativa;Diare berdarah;0.9
+Kolitis Ulserativa;Perut kram dan kembung;0.8
+Kolitis Ulserativa;Kehilangan berat badan;0.7
+Kolitis Ulserativa;Nyeri perut;0.7
+Batu Empedu;Nyeri tajam di perut bagian kanan atas;0.9
+Batu Empedu;Mual dan muntah;0.7
+Batu Empedu;Kuning pada kulit dan mata (jaundice);0.8
+Batu Empedu;Gangguan pencernaan seperti gas (kentut);0.6
+IBS;Perubahan pola buang air besar (diare atau sembelit);0.9
+IBS;Perut kembung;0.7
+IBS;Kram perut;0.8
+IBS;Sensasi tekanan atau distensi pada perut;0.7
+IBS;Perasaan ingin buang air besar terus-menerus tanpa hasil;0.8
+Kanker Lambung;Nyeri perut atau perut terasa penuh;0.9
+Kanker Lambung;Hilang nafsu makan;0.8
+Kanker Lambung;Kehilangan berat badan;0.9
+Kanker Lambung;Mual dan muntah;0.7
+Kanker Lambung;Perdarahan pada tinja atau muntah;0.9
+Kanker Usus Besar;Perubahan pola buang air besar (darah dalam tinja, diare, sembelit);0.9
+Kanker Usus Besar;Perut kembung;0.7
+Kanker Usus Besar;Kehilangan berat badan;0.8
+Kanker Usus Besar;Kelemahan dan kelelahan;0.7
+Kanker Usus Besar;Sensasi perut tidak nyaman atau nyeri;0.7
+Kanker Hati;Kuning (jaundice) pada kulit dan mata;0.9
+Kanker Hati;Kehilangan berat badan;0.8
+Kanker Hati;Kelelahan;0.7
+Kanker Hati;Nyeri perut;0.7
+Kanker Hati;Pembesaran hati dan perut (hepatomegali dan splenomegali);0.8
+Divertikulitis;Nyeri perut sebelah kiri bawah;0.9
+Divertikulitis;Demam;0.7
+Divertikulitis;Perubahan pola buang air besar (diare atau sembelit);0.8
+Divertikulitis;Perut kembung dan distensi;0.7
+Penyakit Crohn;Diare berdarah;0.9
+Penyakit Crohn;Nyeri perut;0.8
+Penyakit Crohn;Perut kembung;0.7
+Penyakit Crohn;Hilang nafsu makan;0.8
+IBS;Perubahan pola buang air besar (diare atau sembelit);0.9
+IBS;Perut kembung;0.7
+IBS;Kram perut;0.8
+IBS;Sensasi tekanan atau distensi pada perut;0.7
+IBS;Perasaan ingin buang air besar terus-menerus tanpa hasil;0.8
+Sirosis Hati;Kelelahan;0.9
+Sirosis Hati;Nyeri pada area hati (perut bagian kanan atas);0.8
+Sirosis Hati;Kuning pada kulit dan mata (jaundice);0.9
+Sirosis Hati;Mual dan muntah;0.7
+Sirosis Hati;Penurunan nafsu makan;0.8
+Sirosis Hati;Perut kembung;0.7
+Kanker Usus Besar;Perubahan pola buang air besar (darah dalam tinja, diare, sembelit);0.9
+Kanker Usus Besar;Perut kembung;0.7
+Kanker Usus Besar;Kehilangan berat badan;0.8
+Kanker Usus Besar;Kelemahan dan kelelahan;0.7
+Kanker Usus Besar;Sensasi perut tidak nyaman atau nyeri;0.7
+Pankreatitis;Nyeri perut yang hebat dan konstan di atas pusar;0.9
+Pankreatitis;Mual dan muntah;0.8
+Pankreatitis;Demam;0.7
+Pankreatitis;Kehilangan nafsu makan;0.8
+Kanker Lambung;Nyeri perut atau perut terasa penuh;0.9
+Kanker Lambung;Hilang nafsu makan;0.8
+Kanker Lambung;Kehilangan berat badan;0.9
+Kanker Lambung;Mual dan muntah;0.7
+Kanker Lambung;Perdarahan pada tinja atau muntah;0.9
+Tukak Lambung;Nyeri pada ulu hati;0.8
+Tukak Lambung;Nyeri perut bagian atas;0.7
+Tukak Lambung;Mual dan muntah;0.6
+Tukak Lambung;Perut kembung;0.6
+Tukak Lambung;Perut terasa kenyang cepat;0.7

@@ -1,0 +1,42 @@
+Hasil Klasifikasi:
+Prediksi Penyakit: Pankreatitis, Nilai Gini: 0.87311
+Prediksi Penyakit: Kanker Lambung, Nilai Gini: 0.79773
+Prediksi Penyakit: Pankreatitis, Nilai Gini: 0.75556
+Prediksi Penyakit: IBS, Nilai Gini: 0.64
+Prediksi Penyakit: Pankreatitis, Nilai Gini: 0.4898
+Prediksi Penyakit: Kanker Lambung, Nilai Gini: 0.5
+Prediksi Penyakit: Pankreatitis, Nilai Gini: 0.375
+Prediksi Penyakit: Kanker Lambung, Nilai Gini: 0.0
+Prediksi Penyakit: Kanker Lambung, Nilai Gini: 
+Prediksi Penyakit: Pankreatitis, Nilai Gini: 0.0
+Prediksi Penyakit: Sirosis Hati, Nilai Gini: 
+Prediksi Penyakit: Pankreatitis, Nilai Gini: 0.0
+Prediksi Penyakit: Sirosis Hati, Nilai Gini: 0.625
+Prediksi Penyakit: IBS, Nilai Gini: 0.64
+Prediksi Penyakit: IBS, Nilai Gini: 0.625
+Prediksi Penyakit: Pankreatitis, Nilai Gini: 0.44444
+Prediksi Penyakit: IBS, Nilai Gini: -2.0
+Prediksi Penyakit: Pankreatitis, Nilai Gini: 0.0
+Prediksi Penyakit: Sirosis Hati, Nilai Gini: 
+Prediksi Penyakit: Kanker Lambung, Nilai Gini: 
+Prediksi Penyakit: Pankreatitis, Nilai Gini: 
+Prediksi Penyakit: Pankreatitis, Nilai Gini: 0.57143
+Prediksi Penyakit: IBS, Nilai Gini: 0.44444
+Prediksi Penyakit: Sirosis Hati, Nilai Gini: 0.32
+
+Laporan Klasifikasi:
+                    precision    recall  f1-score   support
+
+         Hepatitis       1.00      0.75      0.86         4
+               IBS       0.86      1.00      0.92         6
+    Kanker Lambung       1.00      1.00      1.00         5
+ Kanker Usus Besar       0.83      1.00      0.91         5
+Kolitis Ulserativa       0.00      0.00      0.00         2
+      Pankreatitis       1.00      1.00      1.00         5
+    Penyakit Crohn       1.00      1.00      1.00         3
+      Sirosis Hati       0.78      1.00      0.88         7
+     Tukak Lambung       1.00      0.50      0.67         2
+
+          accuracy                           0.90        39
+         macro avg       0.83      0.81      0.80        39
+      weighted avg       0.87      0.90      0.87        39

@@ -1,0 +1,40 @@
+Nama;Jenis Kelamin;Usia;Nyeri lambung atau perut bagian atas;Mual;Muntah;Perut kembung;Gangguan pencernaan;Nyeri perut yang terasa perih;Perdarahan pada tinja atau muntah;Kehilangan nafsu makan;Sensasi terbakar pada dada;Regurgitasi;Penyakit
+Ganjar Pranowo;L;50;1;0;1;0;0;0;1;0;0;1;Penyakit Crohn
+Fitri Amalia;P;51;0;0;0;1;0;1;0;1;1;0;IBS
+Dewi Sartika;P;57;0;1;1;0;1;0;0;0;0;0;Sirosis Hati
+Joko Widodo;L;60;1;1;1;1;1;0;0;1;0;0;Sirosis Hati
+Ganjar Pranowo;L;45;0;0;1;0;1;1;0;1;0;1;Kanker Usus Besar
+Iwan Setiawan;L;47;1;0;0;0;0;0;0;1;0;0;Pankreatitis
+Budi Akbar;L;54;0;0;0;0;0;0;0;0;1;0;Kanker Lambung
+Joko Widodo;L;57;1;1;0;1;1;0;0;0;0;1;Tukak Lambung
+Agus Santoso;L;60;0;1;0;0;0;0;1;0;1;0;Hepatitis
+Dewi Lestari;P;35;1;1;0;1;1;1;0;0;1;1;Kanker Usus Besar
+Nina Rahayu;P;38;0;1;1;1;1;1;0;0;1;1;Pankreatitis
+Dwi Putra;L;43;1;0;0;1;0;1;1;1;1;0;IBS
+Dwi Sartika;P;57;0;1;1;0;1;0;0;0;0;0;Sirosis Hati
+Joko Santoso;L;55;1;1;1;1;1;0;0;0;0;1;Tukak Lambung
+Andi Prasetyo;L;59;1;1;0;1;0;0;1;1;1;0;Kanker Lambung
+Mira Lestari;P;53;1;1;0;1;0;1;1;0;1;1;Kolitis Ulserativa
+Budi Pranowo;L;47;0;1;1;0;0;0;0;1;1;0;Hepatitis
+Joko Cahyono;L;58;1;1;1;1;0;1;1;1;1;1;Kanker Usus Besar
+Budi Akbar;L;54;0;0;0;0;0;0;0;0;1;0;Kanker Lambung
+Ani Setiawati;P;50;0;1;0;1;1;0;0;0;1;1;Penyakit Crohn
+Eka Wijaya;L;51;1;0;0;0;1;1;0;1;0;0;IBS
+Dewi Susanti;P;57;1;1;0;1;0;1;0;0;1;0;Sirosis Hati
+Agus Santoso;L;60;0;1;0;0;0;0;1;0;1;0;Hepatitis
+Budi Cahyono;L;42;1;1;1;1;0;1;1;1;0;0;Pankreatitis
+Maria;P;55;1;1;1;1;1;0;0;0;0;1;Sirosis Hati
+Ahmad;L;48;0;0;0;0;0;0;0;0;0;0;Kanker Lambung
+Siti;P;35;1;0;0;0;0;1;0;1;1;0;IBS
+Rudi;L;59;0;1;1;1;1;1;0;0;1;1;Kanker Usus Besar
+Andi;L;54;1;1;0;1;1;0;1;1;1;0;Pankreatitis
+Dian;P;47;0;0;0;0;1;0;0;1;0;1;Kolitis Ulserativa
+Joni;L;58;1;1;1;1;0;1;1;1;1;1;Penyakit Crohn
+Maria;P;55;1;1;1;1;0;1;1;1;0;0;IBS
+Ahmad;L;48;1;1;1;1;1;0;0;0;0;1;Sirosis Hati
+Siti;P;35;0;0;0;0;0;0;0;0;0;0;Hepatitis
+Rudi;L;59;1;0;0;0;0;1;0;1;1;0;Pankreatitis
+Andi;L;54;0;1;1;1;1;1;0;0;1;1;Sirosis Hati
+Dian;P;47;1;1;0;1;1;0;1;1;1;0;Kanker Lambung
+Joni;L;58;0;0;0;0;1;0;0;1;0;1;IBS
+;;;1;1;1;1;0;1;1;1;1;1;Kanker Usus Besar

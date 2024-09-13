@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" >
+
+<style>
+   
+/* Body */
+body {
+  font-family: Arial, sans-serif;
+  margin-left: 250px; /* Sesuaikan dengan lebar sidebar */
+}
+
+/* Tables */
+.table-container {
+  overflow: auto; /* Membuat konten dapat digulir secara vertikal dan horizontal */
+  max-width: 100%; /* Membatasi lebar maksimum */
+  height: 600px; /* Mengatur tinggi kontainer tabel */
+}
+
+.table {
+  width: max-content; /* Mengisi lebar dari konten */
+  border-radius: 0.25rem;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0,0,0,0.15);
+}
+
+.table th,
+.table td {
+  padding: 0.75rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+  text-align: left; /* Menyamakan teks ke kiri */
+  white-space: nowrap; /* Mencegah teks berlipat saat terlalu panjang */
+}
+
+.table thead th {
+  border-top: none;
+  background-color: #343a40;
+  color: #fff;
+}
+
+.table tbody+tbody {
+  border-top: 2px solid #dee2e6;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #f2f2f2; /* Warna latar belakang baris genap */
+}
+
+
+  </style>
+  <title>Admin Panel</title>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Aplikasi Deteksi Penyakit Pencernaan</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  
+</nav>
+<!-- End Navbar -->
+
+<!-- Sidebar -->
+{% include 'sidebar.html' %}
+<!-- End Sidebar -->
+<div class="container-fluid mt-5">
+  <div class="row">
+    <div class="col-md-12">
+      <h4>Hasil Klasifikasi</h4>
+      <sub>Hasil Klasifikasi berasal dari data uji</sub>
+      <hr>
+      <br>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="table-container">
+            <table class="table" style="width: 100%;">
+              <thead>
+                <tr>
+                  <th>Nama</th>
+                  <th>Prediksi Penyakit</th>
+                  <th>Nilai Gini</th>
+                </tr>
+              </thead>
+              <tbody id="hasil">
+                <!-- Data akan ditambahkan di sini menggunakan JavaScript -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <h4>Report</h4>
+          <hr>
+          <div id="classificationTable"></div>
+          <br>
+          <div id="pieChart"></div>
+        </div>
+      </div>
+      
+      
+      <hr>
+      <h4>Pohon Keputusan</h4>
+      <div class="text-right">
+        <a target="__blank" href="{{ url_for('static', filename='output/decision_tree.png') }}" class="btn btn-danger btn-sm">Lihat Pohon Keputusan</a>
+      </div>
+      <hr>
+      <img src="{{ url_for('static', filename='output/decision_tree.png') }}" width="100%">
+      <br>
+      <h4>Rule</h4>
+      <sub>Otomatis Di sesuaikan berdasartkan pohon keputusan</sub>
+      <hr>
+      <div id="output"></div>
+      
+    </div>
+  </div>
+</div>
+
+<!-- Optional JavaScript; choose one of the two! -->
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" ></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/11.4.0/highcharts.js" integrity="sha512-8TTeb9L1dC4nfXg/eSMBpIqsuUSpWChW/HK4M+IfWmC9O5TVYkMhwiCQd/IlmdzznUQAiQprHTMpP3ye4Ab7Lw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<div class="sidebar">
+    <div class="sidebar-heading">CART</div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item"><a href="/dashboard">Main</a></li>
+        <li class="list-group-item"><a href="/data_latih">Data Latih</a></li>
+        <li class="list-group-item"><a href="/data_uji">Data Uji</a></li>
+        <li class="list-group-item"><a href="/cart_processing">CART Processing</a></li>
+    </ul>
+</div>
+<style>
+        /* Sidebar */
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 250px;
+        /* Ubah lebar sesuai kebutuhan */
+        height: 100%;
+        background: linear-gradient(to bottom, #343a40, #1a1e21);
+        /* Ubah warna latar belakang menggunakan gradient */
+        color: #fff;
+        padding-top: 1rem;
+    }
+
+    .sidebar-heading {
+        padding: 1rem;
+        color: #fff;
+        /* Ubah warna font */
+    }
+
+    .list-group-item {
+        background-color: transparent !important;
+        border-color: #343a40 !important;
+        color: #fff;
+        /* Ubah warna font */
+        cursor: pointer;
+        /* Mengubah kursor menjadi tanda tangan saat diarahkan ke link */
+    }
+
+    .list-group-item:hover {
+        background-color: #495057 !important;
+    }
+
+    .list-group-item a {
+        color: inherit;
+        /* Pewarisan warna font dari parent (list-group-item) */
+        text-decoration: none;
+        /* Menghilangkan dekorasi tautan (underline) */
+    }
+
+    .list-group-item a:hover {
+        text-decoration: underline;
+        /* Menambah garis bawah saat tautan dihover */
+    }
+</style>

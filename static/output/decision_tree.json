@@ -1,0 +1,164 @@
+{
+    "attribute": "G2",
+    "value": "Ya",
+    "left": {
+        "attribute": "G1",
+        "value": "Tidak",
+        "left": {
+            "attribute": "G8",
+            "value": "Tidak",
+            "left": {
+                "attribute": "G6",
+                "value": "Tidak",
+                "left": {
+                    "attribute": "G4",
+                    "value": "Tidak",
+                    "left": {
+                        "result": "P7"
+                    },
+                    "right": {
+                        "attribute": "G9",
+                        "value": "Tidak",
+                        "left": {
+                            "result": "P9"
+                        },
+                        "right": {
+                            "result": "P1"
+                        }
+                    }
+                },
+                "right": {
+                    "attribute": "G4",
+                    "value": "Tidak",
+                    "left": {
+                        "result": "P6"
+                    },
+                    "right": {
+                        "result": "P2"
+                    }
+                }
+            },
+            "right": {
+                "result": "P3"
+            }
+        },
+        "right": {
+            "result": "P1"
+        }
+    },
+    "right": {
+        "attribute": "G7",
+        "value": "Ya",
+        "left": {
+            "attribute": "G6",
+            "value": "Tidak",
+            "left": {
+                "attribute": "G1",
+                "value": "Tidak",
+                "left": {
+                    "attribute": "G4",
+                    "value": "Ya",
+                    "left": {
+                        "attribute": "G8",
+                        "value": "Tidak",
+                        "left": {
+                            "result": "P3"
+                        },
+                        "right": {
+                            "result": "P8"
+                        }
+                    },
+                    "right": {
+                        "attribute": "G8",
+                        "value": "Tidak",
+                        "left": {
+                            "attribute": "G9",
+                            "value": "Tidak",
+                            "left": {
+                                "result": "P9"
+                            },
+                            "right": {
+                                "result": "P11"
+                            }
+                        },
+                        "right": {
+                            "result": "P2"
+                        }
+                    }
+                },
+                "right": {
+                    "result": "P6"
+                }
+            },
+            "right": {
+                "result": "P2"
+            }
+        },
+        "right": {
+            "attribute": "G9",
+            "value": "Ya",
+            "left": {
+                "attribute": "G10",
+                "value": "Tidak",
+                "left": {
+                    "attribute": "G3",
+                    "value": "Tidak",
+                    "left": {
+                        "result": "P8"
+                    },
+                    "right": {
+                        "result": "P7"
+                    }
+                },
+                "right": {
+                    "result": "P3"
+                }
+            },
+            "right": {
+                "attribute": "G1",
+                "value": "Ya",
+                "left": {
+                    "attribute": "G3",
+                    "value": "Tidak",
+                    "left": {
+                        "attribute": "G8",
+                        "value": "Tidak",
+                        "left": {
+                            "result": "P11"
+                        },
+                        "right": {
+                            "result": "P8"
+                        }
+                    },
+                    "right": {
+                        "attribute": "G4",
+                        "value": "Tidak",
+                        "left": {
+                            "attribute": "G6",
+                            "value": "Tidak",
+                            "left": {
+                                "result": "P10"
+                            },
+                            "right": {
+                                "result": "P12"
+                            }
+                        },
+                        "right": {
+                            "result": "P4"
+                        }
+                    }
+                },
+                "right": {
+                    "attribute": "G5",
+                    "value": "Tidak",
+                    "left": {
+                        "result": "P6"
+                    },
+                    "right": {
+                        "result": "P9"
+                    }
+                }
+            }
+        }
+    }
+}

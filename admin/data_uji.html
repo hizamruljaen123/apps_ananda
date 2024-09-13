@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" >
+
+<style>
+
+
+/* Body */
+body {
+  font-family: Arial, sans-serif;
+  margin-left: 250px; /* Sesuaikan dengan lebar sidebar */
+  background: linear-gradient(to bottom, #f0f3f5, #d1d8db); /* Ubah warna latar belakang menggunakan gradient */
+}
+
+/* Tables */
+.table-container {
+  overflow: auto; /* Membuat konten dapat digulir secara vertikal dan horizontal */
+  max-width: 100%; /* Membatasi lebar maksimum */
+  height: 600px; /* Mengatur tinggi kontainer tabel */
+}
+
+.table {
+  width: max-content; /* Mengisi lebar dari konten */
+  border-radius: 0.25rem;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0,0,0,0.15);
+  width: 100%;
+}
+
+.table th,
+.table td {
+  padding: 0.75rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+  text-align: left; /* Menyamakan teks ke kiri */
+  white-space: nowrap; /* Mencegah teks berlipat saat terlalu panjang */
+}
+
+.table thead th {
+  border-top: none;
+  background-color: #343a40;
+  color: #fff;
+}
+
+.table tbody+tbody {
+  border-top: 2px solid #dee2e6;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #f2f2f2; /* Warna latar belakang baris genap */
+}
+
+
+  </style>
+  <title>Admin Panel</title>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Aplikasi Deteksi Penyakit Pencernaan</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  
+</nav>
+<!-- End Navbar -->
+
+<!-- Sidebar -->
+{% include 'sidebar.html' %}
+<!-- End Sidebar -->
+<div class="container-fluid mt-5">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="table-container">
+        <h4>Daftar Data Uji</h4>
+        <div class="text-right">
+          <button class="btn btn-danger btn-sm" onclick="openCSVInExcel('data_uji.csv')">Lihat Excel</button>
+        </div>
+        <br>
+        <table id="dataUjiTable" class="table">
+          <thead>
+              <tr>
+                  <th>Nama</th>
+                  <th>Usia</th>
+                  <th>P/L</th>
+                  <th>G1</th>
+                  <th>G2</th>
+                  <th>G3</th>
+                  <th>G4</th>
+                  <th>G5</th>
+                  <th>G6</th>
+                  <th>G7</th>
+                  <th>G8</th>
+                  <th>G9</th>
+                  <th>G10</th>
+              </tr>
+          </thead>
+          <tbody>
+              <!-- Data rows will be appended here by JavaScript -->
+          </tbody>
+      </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Optional JavaScript; choose one of the two! -->
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" ></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+<script>
+  fetchDataUji()
+</script>
+
+</body>
+</html>
