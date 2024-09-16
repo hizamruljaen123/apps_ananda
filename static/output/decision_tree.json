@@ -1,24 +1,24 @@
 {
-    "attribute": "G2",
-    "value": "Ya",
+    "attribute": "G6",
+    "value": 1,
     "left": {
-        "attribute": "G1",
-        "value": "Tidak",
+        "attribute": "G5",
+        "value": 0,
         "left": {
-            "attribute": "G8",
-            "value": "Tidak",
+            "attribute": "G12",
+            "value": 0,
             "left": {
-                "attribute": "G6",
-                "value": "Tidak",
+                "attribute": "G10",
+                "value": 0,
                 "left": {
-                    "attribute": "G4",
-                    "value": "Tidak",
+                    "attribute": "G8",
+                    "value": 0,
                     "left": {
                         "result": "P7"
                     },
                     "right": {
-                        "attribute": "G9",
-                        "value": "Tidak",
+                        "attribute": "G13",
+                        "value": 0,
                         "left": {
                             "result": "P9"
                         },
@@ -28,8 +28,8 @@
                     }
                 },
                 "right": {
-                    "attribute": "G4",
-                    "value": "Tidak",
+                    "attribute": "G8",
+                    "value": 0,
                     "left": {
                         "result": "P6"
                     },
@@ -47,20 +47,20 @@
         }
     },
     "right": {
-        "attribute": "G7",
-        "value": "Ya",
+        "attribute": "G11",
+        "value": 1,
         "left": {
-            "attribute": "G6",
-            "value": "Tidak",
+            "attribute": "G10",
+            "value": 0,
             "left": {
-                "attribute": "G1",
-                "value": "Tidak",
+                "attribute": "G5",
+                "value": 0,
                 "left": {
-                    "attribute": "G4",
-                    "value": "Ya",
+                    "attribute": "G8",
+                    "value": 1,
                     "left": {
-                        "attribute": "G8",
-                        "value": "Tidak",
+                        "attribute": "G12",
+                        "value": 0,
                         "left": {
                             "result": "P3"
                         },
@@ -69,11 +69,11 @@
                         }
                     },
                     "right": {
-                        "attribute": "G8",
-                        "value": "Tidak",
+                        "attribute": "G12",
+                        "value": 0,
                         "left": {
-                            "attribute": "G9",
-                            "value": "Tidak",
+                            "attribute": "G13",
+                            "value": 0,
                             "left": {
                                 "result": "P9"
                             },
@@ -95,14 +95,14 @@
             }
         },
         "right": {
-            "attribute": "G9",
-            "value": "Ya",
+            "attribute": "G13",
+            "value": 1,
             "left": {
-                "attribute": "G10",
-                "value": "Tidak",
+                "attribute": "G14",
+                "value": 0,
                 "left": {
-                    "attribute": "G3",
-                    "value": "Tidak",
+                    "attribute": "G7",
+                    "value": 0,
                     "left": {
                         "result": "P8"
                     },
@@ -115,14 +115,14 @@
                 }
             },
             "right": {
-                "attribute": "G1",
-                "value": "Ya",
+                "attribute": "G5",
+                "value": 1,
                 "left": {
-                    "attribute": "G3",
-                    "value": "Tidak",
+                    "attribute": "G7",
+                    "value": 0,
                     "left": {
-                        "attribute": "G8",
-                        "value": "Tidak",
+                        "attribute": "G12",
+                        "value": 0,
                         "left": {
                             "result": "P11"
                         },
@@ -131,11 +131,11 @@
                         }
                     },
                     "right": {
-                        "attribute": "G4",
-                        "value": "Tidak",
+                        "attribute": "G8",
+                        "value": 0,
                         "left": {
-                            "attribute": "G6",
-                            "value": "Tidak",
+                            "attribute": "G10",
+                            "value": 0,
                             "left": {
                                 "result": "P10"
                             },
@@ -149,8 +149,8 @@
                     }
                 },
                 "right": {
-                    "attribute": "G5",
-                    "value": "Tidak",
+                    "attribute": "G9",
+                    "value": 0,
                     "left": {
                         "result": "P6"
                     },

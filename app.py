@@ -40,6 +40,8 @@ disease_mapping = {
     "P13": "Divertikulitis"
 }
 reverse_disease_mapping = {v: k for k, v in disease_mapping.items()}
+reverse_column_mapping = {v: k for k, v in column_mapping.items()}
+
 
 # Fungsi untuk memuat decision tree dari JSON
 def load_decision_tree(file_path):
@@ -178,7 +180,47 @@ def add_edges(graph, node, parent=None, edge_label='', depth=0):
         add_edges(graph, node.right, id(node), 'Tidak', depth + 1)
 
 
+def decision_tree_to_if_else(node):
+    if 'result' in node:
+        # Mapping hasil diagnosis dari kode penyakit ke nama penyakit
+        disease_name = disease_mapping.get(node['result'], f"Unknown disease code: {node['result']}")
+        return f"THEN diagnose as {disease_name}"
 
+    # Mapping kode gejala ke deskripsi gejala
+    symptom_name = reverse_column_mapping.get(node['attribute'], f"Unknown symptom code: {node['attribute']}")
+    
+    # Jika ada atribut 'left' dan 'right', bangun pernyataan IF-ELSE
+    condition = f"IF {symptom_name} == {node['value']}"
+    left_branch = decision_tree_to_if_else(node['left'])
+    right_branch = decision_tree_to_if_else(node['right'])
+
+    # Gabungkan kondisi IF, bagian 'left', dan 'right'
+    return f"{condition} {left_branch} ELSE {right_branch}"
+@app.route('/get_decision_tree_if_else', methods=['GET'])
+def get_decision_tree_if_else():
+    try:
+        # Path ke file decision_tree.json
+        file_path = os.path.join('static', 'output', 'decision_tree.json')
+
+        # Pastikan file ada
+        if not os.path.exists(file_path):
+            return jsonify({"error": "Decision tree file not found."}), 404
+
+        # Baca decision_tree.json
+        with open(file_path, 'r') as f:
+            decision_tree = json.load(f)
+
+        # Konversi decision tree menjadi IF THEN ELSE
+        if_else_representation = decision_tree_to_if_else(decision_tree)
+
+        # Kembalikan hasil sebagai JSON
+        return jsonify({
+            "message": "Conversion successful.",
+            "if_else_representation": if_else_representation
+        })
+
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
 @app.route('/classify', methods=['GET'])
 def classify():
     """Klasifikasi data uji dengan mengambil data dari static/input/data_uji.xlsx."""
@@ -414,6 +456,9 @@ def open_csv_in_excel():
     else:
         return 'File CSV tidak ditemukan', 404
 
+@app.route('/train_model', methods=['GET'])
+def train_model_page():
+    return render_template('train_model.html')
 # Handle akses ke static files
 @app.route('/static/<path:filename>')
 def static_files(filename):
