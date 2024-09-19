@@ -6,8 +6,12 @@ import json
 import pandas as pd
 import matplotlib.pyplot as plt
 import networkx as nx
+from flask_cors import CORS
+
 
 app = Flask(__name__, template_folder='admin', static_folder='static')
+CORS(app)
+
 
 # Mapping dari kolom gejala ke kode singkatan
 column_mapping = {
